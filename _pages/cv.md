@@ -9,13 +9,22 @@ redirect_from:
 
 {% include base_path %}
 
+If you want to see my full curricular vitae, please check [this link.]()
+
+
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
 
-Work experience
+* M.S. in Kim Jaechul Graduate School of AI, KAIST · 2024.09 - 2026 (expected)
+* B.S. in Computer Science & Engineering, Korea University · 2020.03 - 2024.08
+
+Experience
+======
+
+* Research Intern @ CVLAB, Korea University · 2023.04 - 2024.08
+  * Supervisor: Prof. Seungryong Kim
+
+<!-- Work experience
 ======
 * Spring 2024: Academic Pages Collaborator
   * Github University
@@ -30,35 +39,29 @@ Work experience
 * Summer 2015: Research Assistant
   * Github University
   * Duties included: Tagging issues
-  * Supervisor: Professor Git
+  * Supervisor: Professor Git -->
   
-Skills
+<!-- Skills
 ======
 * Skill 1
 * Skill 2
   * Sub-skill 2.1
   * Sub-skill 2.2
   * Sub-skill 2.3
-* Skill 3
+* Skill 3 -->
 
-Publications
+Honors & Awards
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+
+* STX Scholarship · 2022.03
+  * Issued by STX Fondation
+
+* The National Scholarship for Science and Engineering · 2022.03
+  * Issued by KOSAF (Korea Student Aid Foundation)
+
+* Merit Based Scholarship · 2021.01
+  * Issued by Suwon-si
   
-Talks
+<!-- Service and leadership
 ======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+* Currently signed in to 43 different slack teams -->
