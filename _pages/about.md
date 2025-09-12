@@ -25,7 +25,7 @@ Publications
 {% assign pubs = site.data.publications | sort: 'pub_date' | reverse %}
 {% for p in pubs %}
   <div class="pub-item" style="display:flex; gap:20px; align-items:flex-start; margin-bottom:28px;">
-    <div class="pub-teaser" style="flex:0 0 200px; display:flex; flex-direction:column; align-items:center;">
+    <div class="pub-teaser" style="flex:0 0 225px; display:flex; flex-direction:column; align-items:center;">
       {% if p.teaser_img %}
   <img src="{{ p.teaser_img | strip }}" alt="teaser {{ p.title | escape }}" class="image-container" style="border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.15);">
       {% else %}
