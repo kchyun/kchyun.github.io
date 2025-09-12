@@ -25,9 +25,9 @@ Publications
 {% assign pubs = site.data.publications | sort: 'pub_date' | reverse %}
 {% for p in pubs %}
   <div class="pub-item" style="display:flex; gap:20px; align-items:flex-start; margin-bottom:28px;">
-    <div class="pub-teaser" style="flex:0 0 200px; max-width:200px; display:flex; flex-direction:column; align-items:center;">
+    <div class="pub-teaser" style="flex:0 0 200px; display:flex; flex-direction:column; align-items:center;">
       {% if p.teaser_img %}
-  <img src="{{ p.teaser_img | strip }}" alt="teaser {{ p.title | escape }}" class="image-container" style="width:200px; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.15);">
+  <img src="{{ p.teaser_img | strip }}" alt="teaser {{ p.title | escape }}" class="image-container" style="border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.15);">
       {% else %}
         <div style="width:200px; height:100; background:#eee; display:flex; align-items:center; justify-content:center; font-size:12px; color:#777; border-radius:6px;">No Image</div>
       {% endif %}
@@ -136,6 +136,6 @@ window.addEventListener('DOMContentLoaded', () => {
 .image-container:hover {
   box-shadow: 0 10px 30px 0px rgba(0, 0, 0, 0.25), 0 10px 15px 0px rgba(0, 0, 0, 0.15) !important;
 }
-}
+
 </style>
 
