@@ -25,11 +25,11 @@ Publications
 {% assign pubs = site.data.publications | sort: 'pub_date' | reverse %}
 {% for p in pubs %}
   <div class="pub-item" style="display:flex; gap:20px; align-items:flex-start; margin-bottom:28px;">
-    <div class="pub-teaser" style="flex:0 0 160px; max-width:160px; display:flex; flex-direction:column; align-items:center;">
+    <div class="pub-teaser" style="flex:0 0 200px; max-width:200px; display:flex; flex-direction:column; align-items:center;">
       {% if p.teaser_img %}
-        <img src="{{ p.teaser_img | strip }}" alt="teaser {{ p.title | escape }}" style="width:160px; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.15);">
+  <img src="{{ p.teaser_img | strip }}" alt="teaser {{ p.title | escape }}" class="image-container" style="width:200px; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.15);">
       {% else %}
-        <div style="width:160px; height:90px; background:#eee; display:flex; align-items:center; justify-content:center; font-size:12px; color:#777; border-radius:6px;">No Image</div>
+        <div style="width:200px; height:100; background:#eee; display:flex; align-items:center; justify-content:center; font-size:12px; color:#777; border-radius:6px;">No Image</div>
       {% endif %}
   <div class="pub-links" style="margin-top:10px; display:flex; flex-direction:row; gap:12px; width:100%; justify-content:center; align-items:center;">
           {% if p.slides_url %}
@@ -65,6 +65,77 @@ Publications
   .pub-item { flex-direction: column; }
   .pub-teaser { max-width:100%; }
   .pub-teaser img { width:100%; height:auto; }
+}
+</style>
+<!-- Click-to-zoom Lightbox -->
+<script>
+// -----------------------------
+// 🖼️ Click-to-zoom Lightbox
+// -----------------------------
+const lightbox = document.createElement('div');
+lightbox.className = 'lightbox-overlay';
+lightbox.setAttribute('role', 'dialog');
+lightbox.setAttribute('aria-modal', 'true');
+lightbox.innerHTML = '<img alt="Expanded image">';
+document.body.appendChild(lightbox);
+const lightboxImg = lightbox.querySelector('img');
+function openLightbox(src, alt) {
+    lightboxImg.src = src;
+    lightboxImg.alt = alt || '';
+    lightbox.classList.add('active');
+    document.body.classList.add('no-scroll');
+}
+function closeLightbox() {
+    lightbox.classList.remove('active');
+    document.body.classList.remove('no-scroll');
+    lightboxImg.src = '';
+}
+lightbox.addEventListener('click', closeLightbox);
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && lightbox.classList.contains('active')) closeLightbox();
+});
+window.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.image-container').forEach(img => {
+        img.classList.add('zoomable');
+        img.addEventListener('click', () => {
+            const src = img.getAttribute('data-fullsrc') || img.currentSrc || img.src;
+            openLightbox(src, img.alt);
+        });
+    });
+});
+</script>
+<style>
+.lightbox-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+.lightbox-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.lightbox-overlay img {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 12px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.25);
+}
+.no-scroll {
+  overflow: hidden !important;
+}
+.zoomable {
+  cursor: zoom-in;
+}
+.image-container:hover {
+  box-shadow: 0 10px 30px 0px rgba(0, 0, 0, 0.25), 0 10px 15px 0px rgba(0, 0, 0, 0.15) !important;
+}
 }
 </style>
 

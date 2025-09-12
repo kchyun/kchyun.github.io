@@ -13,7 +13,7 @@ citation: 'Shin, Heeseong, Chaehyun Kim, Sunghwan Hong, Seokju Cho, Anurag Arnab
 category: conferences
 ---
 <div style="display: flex; align-items: flex-start; margin-bottom: 1em;">
-    <img src="../images/500x300.png" alt="teaser" style="width:160px; margin-right:20px; border-radius:8px;">
+    <img src="../images/title_img/PixelCLIP.png" alt="teaser" style="width:160px; margin-right:20px; border-radius:8px;">
     <div>
         <h2 style="margin-top:0;">Towards open-vocabulary semantic segmentation without semantic labels</h2>
         <div style="color: #777; margin-bottom: 8px;">Heeseong Shin, <strong>Chaehyun Kim</strong>, Sunghwan Hong, Seokju Cho, Anurag Arnab, Paul Hongsuck Seo, and Seungryong Kim.</div>
