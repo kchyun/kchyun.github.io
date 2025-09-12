@@ -11,12 +11,26 @@ redirect_from:
 
 If you want to see my full curricular vitae, please check [this link.]()
 
+<!-- 
+Education
+======
+
+* M.S. / Ph.D. Integrated Student in Kim Jaechul Graduate School of AI, KAIST · 2024.09 - 2029 (expected)
+  * PI: Prof. Seungryong Kim
+* B.S. in Computer Science & Engineering, Korea University · 2020.03 - 2024.08
+ -->
 
 Education
 ======
 
-* M.S. in Kim Jaechul Graduate School of AI, KAIST · 2024.09 - 2026 (expected)
-* B.S. in Computer Science & Engineering, Korea University · 2020.03 - 2024.08
+M.S. / Ph.D Integrated Student @ Korea Advanced Institute of Science & Technology (KAIST)
+: Kim Jaechul Graduage School of AI, CVLAB (PI: Prof. Seungryong Kim)
+: 2024.09 - 2029 (expected)
+
+BS at Korea University
+: Computer Science & Engineering
+: 2020.03 - 2024.08
+
 
 Experience
 ======
