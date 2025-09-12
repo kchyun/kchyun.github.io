@@ -8,8 +8,8 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Chaehyun Kim / Personal Page"
-title_separator          : "-"
+title                    : "Chaehyun Kim"
+title_separator          : "|"
 name                     : &name "Chaehyun Kim"
 description              : &description "Chaehyun Kim's personal page"
 url                      : https://kchyun.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
