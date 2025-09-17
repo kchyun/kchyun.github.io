@@ -10,7 +10,7 @@
 locale                   : "en-US"
 title                    : "Chaehyun Kim"
 title_separator          : "|"
-name                     : &name "Chaehyun Kim"
+name                     : "Chaehyun Kim's personal page"
 description              : &description "Chaehyun Kim's personal page"
 url                      : https://kchyun.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
