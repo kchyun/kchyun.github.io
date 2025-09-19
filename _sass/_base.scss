@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 2em 0 0.5em;
   line-height: 1.2;
   font-family: $header-font-family;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 h1 {
@@ -312,4 +312,99 @@ nav {
 b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a, tr, td, form button, input[type="submit"], .btn, .highlight, .archive__item-teaser {
   -webkit-transition: $global-transition;
   transition: $global-transition;
+}
+/*
+   Dark mode
+   ========================================================================== */
+body.dark-mode {
+  background: #2d2d2d;
+  color: #eee;
+
+  // Navigation bar background and text
+  .masthead,
+  nav,
+  .greedy-nav {
+    background: #2d2d2d !important;
+    color: #eee !important;
+  }
+
+  .masthead__menu-item a,
+  .greedy-nav a,
+  .masthead__menu-item--lg a {
+    color: #eee !important;
+  }
+
+  // Active/hover states
+  .masthead__menu-item a:hover,
+  .greedy-nav a:hover {
+    color: #ffd700 !important;
+  }
+
+  // Other text elements
+  h1, h2, h3, h4, h5, h6,
+  p, span, li, blockquote, figcaption {
+    color: #eee !important;
+  }
+  .author, .venue {
+    color: #ccc !important;
+  }
+
+  // Code blocks and pre
+  pre, code {
+    background: #333 !important;
+    color: #ffd700 !important;
+  }
+
+  // Footer
+  footer,
+  .site-footer,
+  .footer,
+  #footer,
+  .page__footer,
+  .page__footer-follow,
+  .page__footer-copyright {
+    background: #2d2d2d !important;
+    color: #eee !important;
+    // border-top: none !important;
+    box-shadow: none !important;
+    a {
+      color: rgb(145, 145, 145) !important;
+    }
+    a:hover {
+      color: #ffd700 !important;
+    }
+  }
+  // Ensure .page__footer's inner containers are also dark
+  .page__footer,
+  .page__footer > .container,
+  .page__footer .wrapper,
+  .page__footer-inner {
+    background: #2d2d2d !important;
+    color: #eee !important;
+  }
+  .hidden-links {
+    background: #3d3d3d !important;
+    border: 1px solid #555 !important;
+    box-shadow: 0 0 10px rgba(#000, 0.5) !important;
+    a {
+      color: #eee !important;
+    }
+    a:hover {
+      color: #ffd700 !important;
+      background: mix(#3d3d3d, $primary-color, 75%) !important;
+    }
+  }
+  .author__urls {
+    background: None !important;
+    border: None !important;
+    box-shadow: None !important;
+    li {
+      a {
+        color: #eee !important;
+      }
+      a:hover {
+        color: #ffd700 !important;
+      }
+    }
+  }
 }

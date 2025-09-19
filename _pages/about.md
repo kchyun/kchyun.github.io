@@ -1,24 +1,22 @@
 ---
 permalink: /
-title: "About me"
+title: "Chaehyun Kim"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-<!-- jekyll serve -l -H localhost -->
+<div class="wordwrap" style="margin-bottom:1.2rem;">
+I am a M.S. / Ph.D. Integrated student of <a href="https://cvlab.kaist.ac.kr">CVLAB</a> at KAIST, under the supervision of Prof. Seungryong Kim. My current work involves a variety of computer vision tasks, including segmentation, text-to-image/video generative models, and 3D/4D reconstruction.
 
-I am a M.S. / Ph.D. Integrated student of [CVLAB](https://cvlab.kaist.ac.kr) at KAIST, under the supervision of Prof. Seungryong Kim. My current work involves a variety of computer vision tasks, including image segmentation, text-to-image/video generation, and 3D modeling.
+My research interests lie at the intersection of computer vision and robotic agents, with a focus on developing accurate and semantically rich perception and generative models for advancing robot perception and world modeling.
+I believe that integrating these fields will make the world more convenient and safer, and I am excited to be part of this journey. 
 
-My research interests lie at <i style="color:#697FBD;">the intersection of computer vision and robotic agents</i>, with a focus on developing accurate and semantically rich perception and generative models for advancing robot perception and world modeling.
-I believe that integrating these fields will make the world more convenient and safer, and I am excited to be part of this journey. If you have any questions or suggestions, please feel free to contact me!
+If you have any questions or suggestions, please feel free to contact me via email (<a href="mailto:kchyun@kaist.ac.kr">kchyun@kaist.ac.kr</a>) or <a href="https://www.linkedin.com/in/kchyun0910">LinkedIn</a>!
+</div>
 
-<div style="margin-bottom:24px;"></div>
-
-
-Publications
-======
+## Publications
 
 {% include base_path %}
 <div class="publications-list">
@@ -51,9 +49,9 @@ Publications
       </div>
       <div class="pub-meta" style="flex:1; min-width:0;">
       <h3 style="margin:0 0 6px; font-size:1.05rem; line-height:1.3;">{{ p.title }}</h3>
-      <div style="margin:0 0 0px; font-size:0.9rem; font-weight:400; color:#555; line-height:1.4;"><i>{{ p.authors }}</i></div>
+      <div class="author">{{ p.authors }}</div>
       {% if p.venue %}
-        <div style="font-size:0.9rem; color:#444; margin-bottom:6px;">{{ p.venue }}</div>
+        <div class="venue"><i>{{ p.venue }}</i></div>
       {% endif %}
     </div>
   </div>

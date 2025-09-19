@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Chaehyun Kim"
+title                    : "About me"
 title_separator          : "|"
 name                     : "Chaehyun Kim's personal page"
 description              : &description "Chaehyun Kim's personal page"
@@ -24,7 +24,7 @@ author:
   avatar           : "profile.png"
   name             : "Chaehyun Kim"
   pronouns         : # example: "she/her"  
-  bio              : "M.S. / Ph.D. Integrated student @ CVLAB, KAIST"
+  bio              : "M.S. / Ph.D. Integrated student<br>@ CVLAB, KAIST"
   location         : "Seoul, Korea"
   employer         : "KAIST AI"
   uri              : # URL

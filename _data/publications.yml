@@ -5,7 +5,7 @@
     Eom, Sunghwan Hong, Seungryong Kim
   pub_date: '2025-09-09'
   date: '2025-09-09'
-  venue: arxiv
+  venue: Arxiv, 2025
   citation: Yoon, Heeji, Jaewoo Jung, Junwan Kim, Hyungyu Choi, Heeseong Shin, Sangbeom
     Lim, Honggyu An, Chaehyun Kim, Jisang Han, Donghyun Kim, Chanho Eom, Sunghwan
     Hong, and Seungryong Kim. &quot;Visual Representation Alignment for Multimodal
@@ -26,7 +26,7 @@
     Kim.
   pub_date: '2025-04-08'
   date: '2025-04-08'
-  venue: arxiv
+  venue: In Advances in Neural Information Processing Systems (NeurIPS), 2025
   citation: 'Han, Jisang, Honggyu An, Jaewoo Jung, Takuya Narihira, Junyoung Seo,
     Kazumi Fukuda, Chaehyun Kim, Sunghwan Hong, Yuki Mitsufuji, and Seungryong Kim.
     &quot;D^ 2USt3R: Enhancing 3D Reconstruction with 4D Pointmaps for Dynamic Scenes.&quot;
@@ -45,8 +45,7 @@
     Anurag Arnab, Paul Hongsuck Seo, and Seungryong Kim.
   pub_date: '2024-12-06'
   date: '2024-12-06'
-  venue: NeurIPS2024
-  excerpt: This paper is about the number 1. The number 2 is left for future work.
+  venue: In Advances in Neural Information Processing Systems (NeurIPS), 2024
   citation: 'Shin, Heeseong, Chaehyun Kim, Sunghwan Hong, Seokju Cho, Anurag Arnab,
     Paul Hongsuck Seo, and Seungryong Kim. &quot;Towards open-vocabulary semantic
     segmentation without semantic labels.&quot; Advances in Neural Information Processing
@@ -58,5 +57,6 @@
   teaser_img: ../images/title_img/PixelCLIP.png
   category: conferences
   permalink: /publication/2024-12-06-PixelCLIP
+  excerpt: null
   arxiv_icon: null
   github_icon: null
