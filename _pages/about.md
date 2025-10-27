@@ -8,10 +8,9 @@ redirect_from:
 ---
 
 <div class="wordwrap" style="margin-bottom:1.2rem;">
-I am a M.S. / Ph.D. Integrated student of <a href="https://cvlab.kaist.ac.kr">CVLAB</a> at KAIST, under the supervision of Prof. Seungryong Kim. My current work involves a variety of computer vision tasks, including segmentation, text-to-image/video generative models, and 3D/4D reconstruction.
+I am an integrated M.S./Ph.D. student of <a href="https://cvlab.kaist.ac.kr">CVLAB</a> at KAIST, advised by Prof. Seungryong Kim and a research intern at Naver Cloud, focusing on the visual components of multi-modal large language models.
 
-My research interests lie at the intersection of computer vision and robotic agents, with a focus on developing accurate and semantically rich perception and generative models for advancing robot perception and world modeling.
-I believe that integrating these fields will make the world more convenient and safer, and I am excited to be part of this journey. 
+My research interests lie at the intersection of computer vision and embodied agents, focusing on developing semantically rich perception and generative models to advance robot perception and world modeling.
 
 If you have any questions or suggestions, please feel free to contact me via email (<a href="mailto:kchyun@kaist.ac.kr">kchyun@kaist.ac.kr</a>) or <a href="https://www.linkedin.com/in/kchyun0910">LinkedIn</a>!
 </div>
