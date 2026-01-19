@@ -313,10 +313,14 @@ b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a,
   -webkit-transition: $global-transition;
   transition: $global-transition;
 }
+.dark-mode .pub-link-icon {
+  filter: brightness(0) invert(1);
+}
 /*
    Dark mode
    ========================================================================== */
-body.dark-mode {
+body.dark-mode,
+html.dark-mode body {
   background: #2d2d2d;
   color: #eee;
 
@@ -348,6 +352,7 @@ body.dark-mode {
   .author, .venue {
     color: #ccc !important;
   }
+
 
   // Code blocks and pre
   pre, code {

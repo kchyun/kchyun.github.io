@@ -18,8 +18,18 @@
 <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 <script>
-if (localStorage.getItem('theme') === 'dark') {
+(function() {
+  if (localStorage.getItem('theme') !== 'dark') {
+    return;
+  }
   document.documentElement.classList.add('js');
-  document.body.classList.add('dark-mode');
-}
+  document.documentElement.classList.add('dark-mode');
+  if (document.body) {
+    document.body.classList.add('dark-mode');
+    return;
+  }
+  document.addEventListener('DOMContentLoaded', function() {
+    document.body.classList.add('dark-mode');
+  }, { once: true });
+})();
 </script>

@@ -29,17 +29,17 @@ redirect_from:
   <div class="pub-links" style="margin-top:10px; display:flex; flex-direction:row; gap:12px; width:100%; justify-content:center; align-items:center;">
           {% if p.slides_url %}
             <a href="{{ p.slides_url }}" target="_blank" rel="noopener" class="pub-link-btn" style="padding:0; background:none; border:none;">
-              <img src="../images/homepage_icon.svg" alt="Homepage" style="width:20px; height:20px; vertical-align:middle; box-shadow:none;">
+              <img src="../images/homepage_icon.svg" alt="Homepage" class="pub-link-icon" style="width:20px; height:20px; vertical-align:middle; box-shadow:none;">
             </a>
           {% endif %}
           {% if p.code_url %}
             <a href="{{ p.code_url }}" target="_blank" rel="noopener" class="pub-link-btn" style="padding:0; background:none; border:none;">
-              <img src="../images/github_icon.svg" alt="GitHub" style="width:20px; height:20px; vertical-align:middle; box-shadow:none;">
+              <img src="../images/github_icon.svg" alt="GitHub" class="pub-link-icon" style="width:20px; height:20px; vertical-align:middle; box-shadow:none;">
             </a>
           {% endif %}
           {% if p.paper_url %}
             <a href="{{ p.paper_url }}" target="_blank" rel="noopener" class="pub-link-btn" style="padding:0; background:none; border:none;">
-              <img src="../images/arxiv_icon.svg" alt="arXiv" style="width:20px; height:20px; vertical-align:middle; box-shadow:none;">
+              <img src="../images/arxiv_icon.svg" alt="arXiv" class="pub-link-icon" style="width:20px; height:20px; vertical-align:middle; box-shadow:none;">
             </a>
           {% endif %}
         </div>
