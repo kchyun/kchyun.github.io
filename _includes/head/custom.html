@@ -19,7 +19,13 @@
 
 <script>
 (function() {
-  if (localStorage.getItem('theme') !== 'dark') {
+  var storedTheme = null;
+  try {
+    storedTheme = localStorage.getItem('theme');
+  } catch (err) {
+    storedTheme = null;
+  }
+  if (storedTheme !== 'dark') {
     return;
   }
   document.documentElement.classList.add('js');

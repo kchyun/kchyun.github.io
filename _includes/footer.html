@@ -23,6 +23,22 @@
 
 <script>
 (function() {
+  function getStoredTheme() {
+    try {
+      return localStorage.getItem('theme');
+    } catch (err) {
+      return null;
+    }
+  }
+
+  function setStoredTheme(value) {
+    try {
+      localStorage.setItem('theme', value);
+    } catch (err) {
+      // Ignore storage errors (e.g., privacy mode).
+    }
+  }
+
   function applyTheme(isDark) {
     if (document.body) {
       document.body.classList.toggle('dark-mode', isDark);
@@ -30,30 +46,35 @@
     document.documentElement.classList.toggle('dark-mode', isDark);
   }
 
-  function initThemeToggle() {
-    var btn = document.querySelector('#theme-toggle a');
+  function updateIcon(isDark) {
     var icon = document.getElementById('theme-icon');
-    if (!btn) {
+    if (!icon) {
       return;
     }
+    icon.classList.toggle('fa-sun', !isDark);
+    icon.classList.toggle('fa-moon', isDark);
+  }
 
-    // Apply saved theme on load.
-    var isDark = localStorage.getItem('theme') === 'dark';
+  function getCurrentIsDark() {
+    return document.documentElement.classList.contains('dark-mode') ||
+      (document.body && document.body.classList.contains('dark-mode'));
+  }
+
+  function initThemeToggle() {
+    var isDark = getStoredTheme() === 'dark';
     applyTheme(isDark);
-    if (icon) {
-      icon.classList.toggle('fa-sun', !isDark);
-      icon.classList.toggle('fa-moon', isDark);
-    }
+    updateIcon(isDark);
 
-    btn.addEventListener('click', function(e) {
-      e.preventDefault();
-      isDark = !(document.body ? document.body.classList.contains('dark-mode') : isDark);
-      applyTheme(isDark);
-      localStorage.setItem('theme', isDark ? 'dark' : 'light');
-      if (icon) {
-        icon.classList.toggle('fa-sun', !isDark);
-        icon.classList.toggle('fa-moon', isDark);
+    document.addEventListener('click', function(e) {
+      var toggle = e.target.closest('#theme-toggle a');
+      if (!toggle) {
+        return;
       }
+      e.preventDefault();
+      isDark = !getCurrentIsDark();
+      applyTheme(isDark);
+      setStoredTheme(isDark ? 'dark' : 'light');
+      updateIcon(isDark);
     });
   }
 

@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 <div class="wordwrap">
-  <p style="margin:0 0 0.45rem;">I am an integrated M.S./Ph.D. student of <a href="https://cvlab.kaist.ac.kr">CVLAB</a> at KAIST, advised by Prof. Seungryong Kim and a research intern at Naver Cloud, focusing on the visual components of multi-modal large language models.</p>
+  <p style="margin:0 0 0.45rem;">I am an integrated M.S./Ph.D. student of KAIST <a href="https://cvlab.kaist.ac.kr">CVLAB</a> under Prof. Seungryong Kim and a research intern at Naver Cloud, with a focus on generative world modeling.</p>
   <p style="margin:0 0 0.45rem;">My research interests lie at the intersection of computer vision and embodied agents, focusing on developing semantically rich perception and generative models to advance robot perception and world modeling.</p>
   <p style="margin:0;">If you have any questions or suggestions, please feel free to contact me via email (<a href="mailto:kchyun@kaist.ac.kr">kchyun@kaist.ac.kr</a>) or <a href="https://www.linkedin.com/in/kchyun0910">LinkedIn</a>!</p>
 </div>
