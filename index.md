@@ -27,8 +27,8 @@ layout: default
 
 <!-- Intro -->
 <div class="bio">
-  <p>I am an integrated M.S./Ph.D. student of KAIST <a href="https://cvlab.kaist.ac.kr">CVLAB</a> under Prof. Seungryong Kim.  and a research intern at Naver Cloud, with a focus on generative world modeling.</p>
-  <p>My research interests lie at the intersection of computer vision and embodied agents, focusing on developing semantically rich perception and generative models to advance robot perception and world modeling.</p>
+  <p>I am an integrated M.S./Ph.D. student at <a href="https://cvlab.kaist.ac.kr">KAIST CVLAB</a>, advised by Prof. Seungryong Kim, and currently a research intern at NVIDIA Research Taiwan. Previously, I was a research intern at Naver Cloud.</p>
+  <p>My research interests lie at the intersection of computer vision and embodied agents, focusing on developing semantically and geometrically rich vision models to advance robot perception and world modeling.</p>
   <p>If you have any questions or suggestions, please feel free to contact me via email (<a href="mailto:kchyun@kaist.ac.kr">kchyun@kaist.ac.kr</a>) or <a href="https://www.linkedin.com/in/kchyun0910">LinkedIn</a>!</p>
 </div>
 
@@ -40,7 +40,7 @@ layout: default
   Recommended size: ~120px wide, any height (auto-scaled).
 -->
 
-<ul class="cv-list">
+<ul class="cv-list exp-grid">
   <li class="exp-item">
     <div class="exp-content">
       <div class="exp-logo">

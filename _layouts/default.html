@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ site.title }}</title>
   <meta name="description" content="{{ site.description }}">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧸</text></svg>">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,13 +44,11 @@
       margin-bottom: 2rem;
     }
 
-    .profile-photo {
-      flex-shrink: 0;
-    }
+    .profile-photo { flex-shrink: 0; }
 
     .profile-photo img {
-      width: 220px;
-      height: 220px;
+      width: 200px;
+      height: 200px;
       object-fit: cover;
       object-position: center;
       display: block;
@@ -69,7 +68,7 @@
 
     .profile-subtitle {
       color: #555;
-      margin: 0 0 1rem;
+      margin: 0 0 0.75rem;
       font-size: 0.95rem;
     }
 
@@ -101,6 +100,7 @@
     }
 
     /* ── Bio ── */
+    .bio { margin-bottom: 1rem; }
     .bio p { margin: 0 0 0.5rem; }
     .bio p:last-child { margin-bottom: 0; }
 
@@ -126,7 +126,16 @@
     }
 
     /* ── Experience items with logo ── */
+    ul.cv-list.exp-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem 2rem;
+      padding-left: 0;
+      list-style: none;
+    }
+
     li.exp-item { list-style: none; margin-left: -1.3rem; }
+    ul.cv-list.exp-grid li.exp-item { margin-left: 0; }
 
     .exp-content {
       display: flex;
@@ -238,7 +247,9 @@
 
     /* ── Responsive ── */
     @media (max-width: 640px) {
+      ul.cv-list.exp-grid { grid-template-columns: 1fr; }
       .profile-header { flex-direction: column; align-items: flex-start; }
+      .profile-photo img { width: 100%; height: auto; }
       .profile-links { justify-content: flex-start; }
       .pub-item { flex-direction: column; }
       .pub-teaser { width: 100%; flex: none; }
