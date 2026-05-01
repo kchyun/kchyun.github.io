@@ -13,7 +13,7 @@ layout: default
       </div>
     </div>
     <div class="bio">
-      <p>I am an integrated M.S./Ph.D. student at <a href="https://cvlab.kaist.ac.kr">KAIST CVLAB</a>, advised by Prof. Seungryong Kim, and an incoming research intern at NVIDIA Research Taiwan. Previously, I was a research intern at Naver Cloud.</p>
+      <p>I am an integrated M.S./Ph.D. student at <a href="https://cvlab.kaist.ac.kr">KAIST CVLAB</a>, advised by Prof. Seungryong Kim, and a research intern at NVIDIA Research Taiwan. Previously, I was a research intern at Naver Cloud.</p>
       <p>My research interests lie at the intersection of computer vision and embodied agents, focusing on developing semantically and geometrically rich vision models to advance robot perception and world modeling.</p>
       <p>If you have any questions or suggestions, please feel free to contact me via email (<a href="mailto:kchyun@kaist.ac.kr">kchyun@kaist.ac.kr</a>) or <a href="https://www.linkedin.com/in/kchyun0910">LinkedIn</a>!</p>
       <div class="profile-links">
@@ -49,7 +49,7 @@ layout: default
       <div class="exp-text">
         <div class="exp-company">NVIDIA Research Taiwan</div>
         <div class="exp-role">Research Intern</div>
-        <div class="exp-period">2026.04 – Now</div>
+        <div class="exp-period">2026.05 – Now</div>
       </div>
     </div>
   </li>
