@@ -9,7 +9,7 @@ layout: default
   <div class="profile-body">
     <div class="profile-left">
       <div class="profile-photo">
-        <img src="/images/profile/profile2.jpg" alt="Chaehyun Kim">
+        <img src="/images/profile/profile2.JPG" alt="Chaehyun Kim">
       </div>
     </div>
     <div class="bio">
