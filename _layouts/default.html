@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+  <!-- Lightbox -->
+  <link rel="stylesheet" href="{{ '/assets/css/lightbox.css' | relative_url }}">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+
+    body {
+      font-family: "Raleway", system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+      color: #2c2c2c;
+      background: #fff;
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 4rem;
+    }
+
+    a { color: #1a73e8; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ── Profile header ── */
+    .profile-header {
+      display: flex;
+      gap: 2.5rem;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+
+    .profile-photo {
+      flex-shrink: 0;
+    }
+
+    .profile-photo img {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    .profile-info {
+      flex: 1;
+      text-align: left;
+    }
+
+    .profile-info h1 {
+      margin: 0 0 0.25rem;
+      font-size: 1.9rem;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+
+    .profile-subtitle {
+      color: #555;
+      margin: 0 0 1rem;
+      font-size: 0.95rem;
+    }
+
+    .profile-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 0.5rem 1.1rem;
+    }
+
+    .profile-links a {
+      color: #444;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    .profile-links a:hover { color: #1a73e8; text-decoration: none; }
+
+    /* ── Section headings ── */
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      border-bottom: 2px solid #e8e8e8;
+      padding-bottom: 0.3rem;
+      margin-top: 2.4rem;
+      margin-bottom: 1rem;
+    }
+
+    /* ── Bio ── */
+    .bio p { margin: 0 0 0.5rem; }
+    .bio p:last-child { margin-bottom: 0; }
+
+    /* ── CV sections ── */
+    ul.cv-list {
+      padding-left: 1.3rem;
+      margin: 0;
+    }
+
+    ul.cv-list > li {
+      margin-bottom: 0.9rem;
+    }
+
+    ul.cv-list > li > ul {
+      padding-left: 1.2rem;
+      margin-top: 0.2rem;
+    }
+
+    ul.cv-list > li > ul > li {
+      margin-bottom: 0.15rem;
+      color: #555;
+      font-size: 0.93rem;
+    }
+
+    /* ── Experience items with logo ── */
+    li.exp-item { list-style: none; margin-left: -1.3rem; }
+
+    .exp-content {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    /* Fixed-size logo box so all logos share the same visual footprint */
+    .exp-logo {
+      flex-shrink: 0;
+      width: 110px;
+      height: 110px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .exp-logo img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .exp-text { flex: 1; }
+
+    .exp-company {
+      font-weight: 600;
+      font-size: 1rem;
+      line-height: 1.3;
+    }
+
+    .exp-role {
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 2px;
+    }
+
+    .exp-period {
+      font-size: 0.85rem;
+      color: #888;
+      margin-top: 1px;
+    }
+
+    /* ── Publications ── */
+    .publications-list { margin-top: 0.5rem; }
+
+    .pub-item {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      margin-bottom: 28px;
+    }
+
+    .pub-teaser {
+      flex: 0 0 220px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .pub-teaser img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+
+    .pub-links {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: row;
+      gap: 12px;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .pub-links a {
+      padding: 0;
+      display: inline-flex;
+    }
+
+    .pub-links img {
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+      box-shadow: none;
+    }
+
+    .pub-meta { flex: 1; min-width: 0; }
+
+    .pub-meta h3 {
+      margin: 0 0 5px;
+      font-size: 1rem;
+      font-weight: 600;
+      line-height: 1.35;
+    }
+
+    .pub-meta .author {
+      font-size: 0.88rem;
+      color: #444;
+      margin-bottom: 3px;
+    }
+
+    .pub-meta .venue {
+      font-size: 0.88rem;
+      color: #666;
+      font-style: italic;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 640px) {
+      .profile-header { flex-direction: column; align-items: flex-start; }
+      .profile-links { justify-content: flex-start; }
+      .pub-item { flex-direction: column; }
+      .pub-teaser { width: 100%; flex: none; }
+      .pub-teaser img { width: 100%; height: auto; }
+    }
+  </style>
+</head>
+<body>
+  {{ content }}
+  <script src="{{ '/assets/js/lightbox.js' | relative_url }}"></script>
+</body>
+</html>
