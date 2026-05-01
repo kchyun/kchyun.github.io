@@ -4,32 +4,32 @@ layout: default
 
 <!-- Profile Header -->
 <div class="profile-header">
-  <div class="profile-photo">
-    <img src="/images/profile3.jpeg" alt="Chaehyun Kim">
-  </div>
-  <div class="profile-info">
-    <h1>Chaehyun Kim</h1>
-    <p class="profile-subtitle">M.S./Ph.D. Integrated Student · CVLAB, KAIST</p>
-    <div class="profile-links">
-      <a href="mailto:kchyun@kaist.ac.kr"><i class="fas fa-envelope"></i> kchyun@kaist.ac.kr</a>
-      <a href="https://scholar.google.com/citations?user=qTKC_2cAAAAJ&hl=en" target="_blank" rel="noopener">
-        <i class="ai ai-google-scholar"></i> Google Scholar
-      </a>
-      <a href="https://github.com/kchyun" target="_blank" rel="noopener">
-        <i class="fab fa-github"></i> GitHub
-      </a>
-      <a href="https://www.linkedin.com/in/kchyun0910" target="_blank" rel="noopener">
-        <i class="fab fa-linkedin"></i> LinkedIn
-      </a>
+  <h1>Chaehyun Kim</h1>
+  <p class="profile-subtitle">M.S./Ph.D. Integrated Student · CVLAB, KAIST</p>
+  <div class="profile-body">
+    <div class="profile-left">
+      <div class="profile-photo">
+        <img src="/images/profile/profile2.jpg" alt="Chaehyun Kim">
+      </div>
+    </div>
+    <div class="bio">
+      <p>I am an integrated M.S./Ph.D. student at <a href="https://cvlab.kaist.ac.kr">KAIST CVLAB</a>, advised by Prof. Seungryong Kim, and an incoming research intern at NVIDIA Research Taiwan. Previously, I was a research intern at Naver Cloud.</p>
+      <p>My research interests lie at the intersection of computer vision and embodied agents, focusing on developing semantically and geometrically rich vision models to advance robot perception and world modeling.</p>
+      <p>If you have any questions or suggestions, please feel free to contact me via email (<a href="mailto:kchyun@kaist.ac.kr">kchyun@kaist.ac.kr</a>) or <a href="https://www.linkedin.com/in/kchyun0910">LinkedIn</a>!</p>
+      <div class="profile-links">
+        <a href="mailto:kchyun@kaist.ac.kr"><i class="fas fa-envelope"></i> kchyun@kaist.ac.kr</a>
+        <a href="https://scholar.google.com/citations?user=qTKC_2cAAAAJ&hl=en" target="_blank" rel="noopener">
+          <i class="ai ai-google-scholar"></i> Scholar
+        </a>
+        <a href="https://github.com/kchyun" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/kchyun0910" target="_blank" rel="noopener">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+      </div>
     </div>
   </div>
-</div>
-
-<!-- Intro -->
-<div class="bio">
-  <p>I am an integrated M.S./Ph.D. student at <a href="https://cvlab.kaist.ac.kr">KAIST CVLAB</a>, advised by Prof. Seungryong Kim, and currently a research intern at NVIDIA Research Taiwan. Previously, I was a research intern at Naver Cloud.</p>
-  <p>My research interests lie at the intersection of computer vision and embodied agents, focusing on developing semantically and geometrically rich vision models to advance robot perception and world modeling.</p>
-  <p>If you have any questions or suggestions, please feel free to contact me via email (<a href="mailto:kchyun@kaist.ac.kr">kchyun@kaist.ac.kr</a>) or <a href="https://www.linkedin.com/in/kchyun0910">LinkedIn</a>!</p>
 </div>
 
 ## Experience

@@ -38,45 +38,44 @@
 
     /* ── Profile header ── */
     .profile-header {
-      display: flex;
-      gap: 2.5rem;
-      align-items: center;
       margin-bottom: 2rem;
     }
 
-    .profile-photo { flex-shrink: 0; }
-
-    .profile-photo img {
-      width: 200px;
-      height: 200px;
-      object-fit: cover;
-      object-position: center;
-      display: block;
-    }
-
-    .profile-info {
-      flex: 1;
-      text-align: left;
-    }
-
-    .profile-info h1 {
-      margin: 0 0 0.25rem;
+    .profile-header h1 {
+      margin: 0 0 0.2rem;
       font-size: 1.9rem;
       font-weight: 600;
       line-height: 1.2;
+      text-align: center;
     }
 
     .profile-subtitle {
       color: #555;
-      margin: 0 0 0.75rem;
+      margin: 0 0 1.5rem;
       font-size: 0.95rem;
+      text-align: center;
+    }
+
+    .profile-body {
+      display: flex;
+      gap: 2.5rem;
+      align-items: flex-start;
+    }
+
+    .profile-left { flex-shrink: 0; }
+
+    .profile-photo img {
+      width: 200px;
+      height: auto;
+      display: block;
     }
 
     .profile-links {
       display: flex;
       flex-wrap: wrap;
-      justify-content: flex-start;
-      gap: 0.5rem 1.1rem;
+      gap: 0.4rem 1.1rem;
+      /* justify-content: center; */
+      margin-bottom: 1rem;
     }
 
     .profile-links a {
@@ -100,7 +99,7 @@
     }
 
     /* ── Bio ── */
-    .bio { margin-bottom: 1rem; }
+    .bio { flex: 1; }
     .bio p { margin: 0 0 0.5rem; }
     .bio p:last-child { margin-bottom: 0; }
 
@@ -248,7 +247,8 @@
     /* ── Responsive ── */
     @media (max-width: 640px) {
       ul.cv-list.exp-grid { grid-template-columns: 1fr; }
-      .profile-header { flex-direction: column; align-items: flex-start; }
+      .profile-body { flex-direction: column; }
+      .profile-left { width: 100%; align-items: flex-start; }
       .profile-photo img { width: 100%; height: auto; }
       .profile-links { justify-content: flex-start; }
       .pub-item { flex-direction: column; }
