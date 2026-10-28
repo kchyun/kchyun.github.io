@@ -80,20 +80,33 @@ layout: default
         <div style="width:100%; height:120px; background:#eee; display:flex; align-items:center; justify-content:center; font-size:12px; color:#777; border-radius:6px;">No Image</div>
       {% endif %}
       <div class="pub-links">
+        {% comment %} Missing links render as a grey, non-clickable "coming soon" icon. {% endcomment %}
         {% if p.slides_url %}
           <a href="{{ p.slides_url }}" target="_blank" rel="noopener">
             <img src="/images/homepage_icon.svg" alt="Project page">
           </a>
+        {% else %}
+          <span class="link-disabled" title="Project page coming soon">
+            <img src="/images/homepage_icon.svg" alt="Project page (coming soon)">
+          </span>
         {% endif %}
         {% if p.code_url %}
           <a href="{{ p.code_url }}" target="_blank" rel="noopener">
             <img src="/images/github_icon.svg" alt="GitHub">
           </a>
+        {% else %}
+          <span class="link-disabled" title="Code coming soon">
+            <img src="/images/github_icon.svg" alt="GitHub (coming soon)">
+          </span>
         {% endif %}
         {% if p.paper_url %}
           <a href="{{ p.paper_url }}" target="_blank" rel="noopener">
             <img src="/images/arxiv_icon.svg" alt="arXiv">
           </a>
+        {% else %}
+          <span class="link-disabled" title="Paper coming soon">
+            <img src="/images/arxiv_icon.svg" alt="arXiv (coming soon)">
+          </span>
         {% endif %}
       </div>
     </div>

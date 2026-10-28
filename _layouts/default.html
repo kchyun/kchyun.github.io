@@ -223,6 +223,16 @@
       box-shadow: none;
     }
 
+    /* Not-yet-available link: greyed out, not clickable */
+    .pub-links .link-disabled {
+      display: inline-flex;
+      cursor: not-allowed;
+    }
+
+    .pub-links .link-disabled img {
+      opacity: 0.25;
+    }
+
     .pub-meta { flex: 1; min-width: 0; }
 
     .pub-meta h3 {
