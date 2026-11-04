@@ -7,9 +7,9 @@
   venue: TBU, 2026
   citation: 'Kim, Jisoo, Chaehyun Kim, Junsu Kim, Jiho Park, Seongchan Kim, Eunbeen
     Hong, Soowon Son, Fu-En Yang, and Seungryong Kim. &quot;DreamX: Video Diffusion
-    Model is a Universal Latent Action Learner.&quot; (2026).'
-  paper_url:
-  slides_url:
+    Model is a Universal Latent Action Learner.&quot; arXiv preprint arXiv:2611.05377 (2026).'
+  paper_url: https://arxiv.org/abs/2611.05377
+  slides_url: https://cvlab-kaist.github.io/DreamX/
   code_url:
   teaser_img: ../images/title_img/DreamX.png
   category: preprints
