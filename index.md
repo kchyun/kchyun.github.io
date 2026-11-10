@@ -165,8 +165,12 @@ layout: default
 -->
 
 <ul class="cv-list">
-  <li>Reviewer · AAAI · 2026</li>
-  <li>Reviewer · ECCV · 2026</li>
+  <li>Reviewer
+    <ul>
+      <li>2026: AAAI, ECCV, NeurIPS</li>
+      <li>2027: WACV, ICLR, AAAI</li>
+    </ul>
+  </li>
 </ul>
 
 ## Honors &amp; Awards
